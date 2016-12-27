@@ -1,6 +1,9 @@
 body {
   background-image: url("http://www.mytechref.com/server25-cdn/2015/11/10/rainbow-sparkles-and-glitter-purple-glitter-9007629da0a6ac25.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  font-family: Big Caslon, serif;
 }
 
 
@@ -30,10 +33,78 @@ body {
   transition: all 280ms ease-in-out;
 }
 
-button:hover {
+#sidebar button:hover {
   color: #000;
   background-color: #5cb8cc;
   border: 1px solid #5cb8cc;
   padding-left: 30px;
+  transition: all 280ms ease-in-out;
+}
+
+
+/* content */
+
+.post {
+  width: 500px;
+  height: 630px;
+  margin-left: 235px;
+  margin-top: 35px;
+  background-color: #fff;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  color: #2c363c;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+.post p {
+  text-indent: 30px;
+}
+
+
+/* pages */
+
+#pages {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #000;
+  margin-left: 435px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 0.3;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#footer {
+  display: inline-flex;
+}
+
+.next {
+  width: 145px;
+  height: 30px;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 1px;
+  font-family: Big Caslon, serif;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: right;
+  transition: all 280ms ease-in-out;
+  margin-top: 50px;
+  margin-left: 20px;
+  padding-right: 15px;
+}
+
+#next button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
   transition: all 280ms ease-in-out;
 }
