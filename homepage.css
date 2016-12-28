@@ -1,7 +1,5 @@
 body {
-  background-image: url("http://www.mytechref.com/server25-cdn/2015/11/10/rainbow-sparkles-and-glitter-purple-glitter-9007629da0a6ac25.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #91c5ad;
   background-attachment: fixed;
   font-family: Big Caslon, serif;
 }
@@ -12,7 +10,9 @@ body {
 #sidebar {
   padding-top: 90px;
   width: 200px;
+  height: 100%;
   float: left;
+  margin-left: 0;
 }
 
 #sidebuttons {
@@ -35,8 +35,8 @@ body {
 
 #sidebar button:hover {
   color: #000;
-  background-color: #5cb8cc;
-  border: 1px solid #5cb8cc;
+  background-color: #fff;
+  border: 1px solid #fff;
   padding-left: 30px;
   transition: all 280ms ease-in-out;
 }
@@ -44,10 +44,15 @@ body {
 
 /* content */
 
+#content {
+  min-width: 980px;
+}
+
 .post {
   width: 500px;
   height: 630px;
-  margin-left: 235px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 35px;
   background-color: #fff;
   border-radius: 2px;
@@ -58,14 +63,49 @@ body {
 img {
   width: 500px;
   height: 500px;
+  margin-top: -100px;
 }
 
 .post p {
   text-indent: 30px;
 }
 
+/* dates */
+
+.date {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: 1px;
+  position: relative;
+  margin-left: 520px;
+  margin-top: 10px;
+}
+
+.date p {
+  border-bottom: 1px solid #fff;
+  width: 70px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.number {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f16e87;
+}
+
 
 /* pages */
+
+#footer {
+  display: inline-flex;
+}
 
 #pages {
   width: 100px;
@@ -77,12 +117,14 @@ img {
   color: #fff;
   font-size: 25px;
   line-height: 0.3;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
 }
 
-#footer {
-  display: inline-flex;
+.pagenumber {
+  font-family: Times New Roman;
+  font-weight: bold;
+  padding-top: 3px;
 }
 
 .next {
@@ -94,7 +136,7 @@ img {
   font-family: Big Caslon, serif;
   color: #fff;
   font-size: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: right;
   transition: all 280ms ease-in-out;
   margin-top: 50px;
