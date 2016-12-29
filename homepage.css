@@ -73,6 +73,18 @@ img {
   margin-top: -100px;
 }
 
+.triangle {
+  height: 0;
+  width: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-right: 40px solid #f16e87;
+  transform: rotate(45deg);
+  margin-left: -40px;
+  margin-top: -44px;
+}
+
 .post p {
   text-indent: 30px;
 }
